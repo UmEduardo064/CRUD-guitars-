@@ -1,48 +1,44 @@
-# ==================================
-# Arquivos de configuração sensíveis
-# ==================================
-.env
-config.php
-*.ini
-*.cnf
-
-# ========================
-# Arquivos do banco (SQL)
-# ========================
-*.sql
-*.sql.gz
-*.dump
-
-# ========================
-# Logs e cache
-# ========================
-*.log
-*.tmp
-*.cache
-*.bak
-*.swp
-
-# ========================
-# Dependências
-# ========================
-vendor/
-node_modules/
-composer.lock
-package-lock.json
-
-# ========================
-# Arquivos do XAMPP (não versionar)
-# ========================
-/xampp/
-/htdocs/tmp/
-/htdocs/logs/
-
-# ========================
 # Arquivos do sistema
-# ========================
 .DS_Store
 Thumbs.db
+
+# Logs
+*.log
+error_log
+
+# Dependências do Composer (geralmente não devem ser commitadas)
+/vendor/
+
+# Ambiente e configurações
+.env
+.env.local
+.env.prod
+
+# Cache e arquivos temporários
+/cache/
+/tmp/
+*.tmp
+
+# Arquivos de IDE
 .idea/
 .vscode/
+*.swp
+*.swo
+
+# Backup de banco de dados
+*.sql
+*.zip
+*.tar.gz
+
+# Arquivos de sessão PHP
+sess_*
+
+# Uploads (se houver)
+/uploads/
+/storage/
+
+# Exceções (não ignore estes)
+!.gitkeep
+!.htaccess
 
 
