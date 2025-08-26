@@ -1,74 +1,47 @@
-# PHP/MySQL XAMPP
+# ==================================
+# Arquivos de configuração sensíveis
+# ==================================
+.env
+config.php
+*.ini
+*.cnf
 
-/config/
-/config.php
-/database.php
-/.env
-.env.local
-.env.*.local
-/app/config/parameters.yml
-
-# Logs
-*.log
-/logs/
-/error_log
-/xampp/apache/logs/
-/xampp/mysql/data/
-
-# Cache
-/cache/
-/tmp/
-/xampp/tmp/
-
-# Backup de banco de dados
+# ========================
+# Arquivos do banco (SQL)
+# ========================
 *.sql
-*.gz
-*.zip
-/backup/
-/dumps/
+*.sql.gz
+*.dump
 
+# ========================
+# Logs e cache
+# ========================
+*.log
+*.tmp
+*.cache
+*.bak
+*.swp
+
+# ========================
+# Dependências
+# ========================
+vendor/
+node_modules/
+composer.lock
+package-lock.json
+
+# ========================
+# Arquivos do XAMPP (não versionar)
+# ========================
+/xampp/
+/htdocs/tmp/
+/htdocs/logs/
+
+# ========================
 # Arquivos do sistema
+# ========================
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
-
-# Arquivos do IDE
 .idea/
 .vscode/
-*.swp
-*.swo
-*~
 
-# Arquivos de ambiente do XAMPP (não versionáveis)
-/xampp/phpmyadmin/config.inc.php
-/xampp/sendmail/sendmail.ini
-
-# Arquivos de sessão PHP
-sess_*
-
-# Cache do navegador e arquivos temporários
-/.htaccess
-.htaccess
-
-# Arquivos de upload (se houver diretório de uploads)
-/uploads/
-/files/
-/assets/uploads/
-
-# Arquivos compilados
-*.compiled
-
-# Arquivos do sistema operacional
-[Tt]humbs.db
-
-# Arquivos de projeto específicos do Windows
-/wp-content/advanced-cache.php
-/wp-content/wp-cache-config.php
-
-# Exceções (não ignorar estes)
-!.gitkeep
-!.htaccess
