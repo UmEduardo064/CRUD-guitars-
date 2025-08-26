@@ -45,8 +45,4 @@ Thumbs.db
 .idea/
 .vscode/
 
-==========================
-*.php linguist-language=PHP
-*.sql linguist-detectable=false
-
 
